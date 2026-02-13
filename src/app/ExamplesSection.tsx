@@ -74,7 +74,8 @@ export default function ExamplesSection() {
           onClick={close}
         >
           <div
-            className="relative mx-4 max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl dark:bg-neutral-900 sm:p-8"
+            className="relative mx-4 max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded
+         +-2xl bg-neutral-900 p-6 shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
