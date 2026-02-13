@@ -1,5 +1,6 @@
 "use client";
 
+import basePath from "./basePath";
 import {
   Scatter,
   XAxis,
@@ -339,7 +340,7 @@ export default function BendingTestChart() {
           <p className="text-xs font-medium uppercase tracking-wider text-foreground/50">
             Three-Point Bending Test
           </p>
-          <img src="/figures/bend-test.svg" alt="Three-point bending test" className="mt-2 h-24 w-auto opacity-80" />
+          <img src={`${basePath}/figures/bend-test.svg`} alt="Three-point bending test" className="mt-2 h-24 w-auto opacity-80" />
           <p className="mt-2 text-xs text-foreground/50">
             Specimen weight: 15.8 g each
           </p>

@@ -1,19 +1,20 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import basePath from "./basePath";
 
 const examples = [
-  { src: "/examples/bearing_holder.png", sim: "/examples/bearing_holder_sim.png", div: "/examples/bearing_holder_div.png", alt: "Bearing Holder" },
-  { src: "/examples/canti.png", sim: "/examples/canti_sim.png", div: "/examples/canti_div.png", alt: "Cantilever" },
-  { src: "/examples/drone.png", sim: "/examples/drone_sim.png", div: "/examples/drone_div.png", alt: "Drone" },
-  { src: "/examples/frame_connector.png", sim: "/examples/frame_connector_sim.png", div: "/examples/frame_connector_div.png", alt: "Frame Connector" },
-  { src: "/examples/wall_hook.png", sim: "/examples/wall_hook_sim.png", div: "/examples/wall_hook_div.png", alt: "Wall Hook" },
-  { src: "/examples/tablet_stand.png", sim: "/examples/tablet_stand_sim.png", div: "/examples/tablet_stand_div.png", alt: "Tablet Stand" },
-  { src: "/examples/rod_connector.png", sim: "/examples/rod_connector_sim.png", div: "/examples/rod_connector_div.png", alt: "Rod Connector" },
-  { src: "/examples/motor_mount.png", sim: "/examples/motor_mount_sim.png", div: "/examples/motor_mount_div.png", alt: "Motor Mount" },
-  { src: "/examples/iphone_stand.png", sim: "/examples/iphone_stand_sim.png", div: "/examples/iphone_stand_div.png", alt: "iPhone Stand" },
-  { src: "/examples/hook.png", sim: "/examples/hook_sim.png", div: "/examples/hook_div.png", alt: "Hook" },
-  { src: "/examples/handle.png", sim: "/examples/handle_sim.png", div: "/examples/handle_div.png", alt: "Handle" },
+  { src: `${basePath}/examples/bearing_holder.png`, sim: `${basePath}/examples/bearing_holder_sim.png`, div: `${basePath}/examples/bearing_holder_div.png`, alt: "Bearing Holder" },
+  { src: `${basePath}/examples/canti.png`, sim: `${basePath}/examples/canti_sim.png`, div: `${basePath}/examples/canti_div.png`, alt: "Cantilever" },
+  { src: `${basePath}/examples/drone.png`, sim: `${basePath}/examples/drone_sim.png`, div: `${basePath}/examples/drone_div.png`, alt: "Drone" },
+  { src: `${basePath}/examples/frame_connector.png`, sim: `${basePath}/examples/frame_connector_sim.png`, div: `${basePath}/examples/frame_connector_div.png`, alt: "Frame Connector" },
+  { src: `${basePath}/examples/wall_hook.png`, sim: `${basePath}/examples/wall_hook_sim.png`, div: `${basePath}/examples/wall_hook_div.png`, alt: "Wall Hook" },
+  { src: `${basePath}/examples/tablet_stand.png`, sim: `${basePath}/examples/tablet_stand_sim.png`, div: `${basePath}/examples/tablet_stand_div.png`, alt: "Tablet Stand" },
+  { src: `${basePath}/examples/rod_connector.png`, sim: `${basePath}/examples/rod_connector_sim.png`, div: `${basePath}/examples/rod_connector_div.png`, alt: "Rod Connector" },
+  { src: `${basePath}/examples/motor_mount.png`, sim: `${basePath}/examples/motor_mount_sim.png`, div: `${basePath}/examples/motor_mount_div.png`, alt: "Motor Mount" },
+  { src: `${basePath}/examples/iphone_stand.png`, sim: `${basePath}/examples/iphone_stand_sim.png`, div: `${basePath}/examples/iphone_stand_div.png`, alt: "iPhone Stand" },
+  { src: `${basePath}/examples/hook.png`, sim: `${basePath}/examples/hook_sim.png`, div: `${basePath}/examples/hook_div.png`, alt: "Hook" },
+  { src: `${basePath}/examples/handle.png`, sim: `${basePath}/examples/handle_sim.png`, div: `${basePath}/examples/handle_div.png`, alt: "Handle" },
 ];
 
 type ExampleItem = (typeof examples)[number];

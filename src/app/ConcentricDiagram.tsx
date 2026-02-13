@@ -1,5 +1,7 @@
 "use client";
 
+import basePath from "./basePath";
+
 // ── Data ──────────────────────────────────────────────────────────────
 const categories = [
   { name: "Aerospace", children: ["Drone Frames", "Rotor Blades"] },
@@ -193,7 +195,7 @@ export default function ConcentricDiagram({ className = "" }: { className?: stri
 
         {/* Center logo */}
         <image
-          href="/logo-mark.png"
+          href={`${basePath}/logo-mark.png`}
           x={CX - LOGO_R * 0.7 + LOGO_OFFSET_X}
           y={CY - LOGO_R * 0.7 + LOGO_OFFSET_Y}
           width={LOGO_R * 1.4}

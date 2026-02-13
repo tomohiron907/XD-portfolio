@@ -1,3 +1,5 @@
+import basePath from "./basePath";
+
 const navLinks = [
   { href: "#benefits", label: "Benefits" },
   { href: "#examples", label: "Examples" },
@@ -14,8 +16,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3">
-              <img src="/logo-mark.png" alt="Strecs3D" className="h-10" />
-              <img src="/logo-type.svg" alt="Strecs3D" className="h-6" />
+              <img src={`${basePath}/logo-mark.png`} alt="Strecs3D" className="h-10" />
+              <img src={`${basePath}/logo-type.svg`} alt="Strecs3D" className="h-6" />
             </div>
             <p className="mt-4 text-sm text-foreground/50">
               FEM-based infill optimizer for 3D printing
